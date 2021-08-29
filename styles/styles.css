@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #083105;
+}
+
+.button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 30px;
+    border-radius: 12px;
+    background-color: #1d9cb3;
+    padding: 7px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18vh;
+    height: 425px;
+    width: 280px;
+    border-radius: 12px;
+}
+
+.card-front {
+    border: solid 1px rgb(26, 25, 24);
+    background-color: rgb(255, 248, 215);
+}
+
+.card-reverse {
+    border: solid 1px rgb(255, 248, 215);
+    background-color: rgb(26, 25, 24);
+}
+
+.card-number {
+    margin: auto;
+    font-size: 90px;
+}
+
+.card-front::before,
+.card-front::after {
+    font-size: 140px;
+}
+
+.card-front::before {
+    margin-left: 15px;
+    margin-right: auto;
+    margin-top: -15px;
+}
+
+.card-front::after {
+    margin-left: auto;
+    margin-right: 15px;
+    margin-bottom: -15px;
+}
+
+.card-front.spades::before,
+.card-front.spades::after {
+    content: '\2660';
+}
+.card-front.clubs::before,
+.card-front.clubs::after {
+    content: '\2663';
+}
+.card-front.diamonds::before,
+.card-front.diamonds::after {
+    content: '\2666';
+    color: rgb(255, 0, 0);
+}
+.card-front.hearts::before,
+.card-front.hearts::after {
+    content: '\2665';
+    color: rgb(255, 0, 0);
+}
