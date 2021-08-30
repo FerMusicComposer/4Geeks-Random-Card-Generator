@@ -38,9 +38,14 @@ body {
     background-color: rgb(26, 25, 24);
 }
 
-.card-number {
+.card-number,
+.card-number-red {
     margin: auto;
     font-size: 90px;
+}
+
+.card-number-red {
+    color: rgb(255, 0, 0);
 }
 
 .card-front::before,
